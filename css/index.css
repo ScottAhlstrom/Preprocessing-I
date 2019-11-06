@@ -147,3 +147,12 @@ body {
 }
 /* variables*/
 /* mixins */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  padding: 2%;
+  text-decoration: none;
+}
+/* closing nav */
