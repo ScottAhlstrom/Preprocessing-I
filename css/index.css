@@ -137,6 +137,14 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
@@ -150,9 +158,29 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5%;
 }
 nav a {
   padding: 2%;
   text-decoration: none;
+  font-size: 1.8rem;
 }
 /* closing nav */
+img {
+  max-width: 40%;
+}
+.intro {
+  padding: 5%;
+  margin: 0 5%;
+  background-color: #DCDCDC;
+}
+.intro h2 {
+  font-size: 8rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 3% 0;
+}
+.intro p {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+/* closing intro */
