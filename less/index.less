@@ -50,10 +50,25 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid grey;
 }
 
 html, body {
     height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* variables*/
+@text-font: 'Poppins', sans-serif;
+@heading-color: #4682B4;
+
+/* mixins */
+.bordered(){
+	border: 2px solid black;
+	padding: 2%;
+}
