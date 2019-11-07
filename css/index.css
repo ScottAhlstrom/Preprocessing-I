@@ -156,12 +156,23 @@ nav {
   justify-content: flex-end;
   margin-right: 5%;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav a {
   padding: 2%;
   text-decoration: none;
   font-size: 1.8rem;
   font-family: 'Josefin Sans', sans-serif;
   color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    flex-direction: column;
+    color: #0000CD;
+  }
 }
 /* closing nav */
 img {
@@ -171,6 +182,11 @@ img {
   padding: 5%;
   margin: 0 5%;
   background-color: #DCDCDC;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
 }
 .intro h2 {
   font-size: 8rem;
@@ -197,7 +213,7 @@ img {
   justify-content: space-between;
   padding: 3% 0;
   margin: 0 5%;
-  /* closing reach-me */
+  /* closing contact */
   /* closing skills*/
 }
 .middle-content .contact {
@@ -239,6 +255,13 @@ img {
   line-height: 200%;
   padding: 1% 5%;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    padding-top: 5%;
+    color: indigo;
+  }
+}
 /* closing middle-content */
 .history {
   padding: 3% 0;
@@ -248,6 +271,12 @@ img {
   font-size: 2.5rem;
   font-family: 'Josefin Sans', sans-serif;
   padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .history {
+    font-size: 1rem;
+    color: navy;
+  }
 }
 table {
   width: 100%;
@@ -276,4 +305,10 @@ th {
   padding: 3% 0;
   margin: 0 5%;
   color: white;
+}
+@media (max-width: 500px) {
+   footer {
+    font-size: 1.2rem;
+    color: black;
+  }
 }
