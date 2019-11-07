@@ -1,1 +1,314 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+/* variables*/
+/* mixins */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav a {
+  padding: 2%;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    flex-direction: column;
+    color: #0000CD;
+  }
+}
+/* closing nav */
+img {
+  max-width: 40%;
+}
+.intro {
+  padding: 5%;
+  margin: 0 5%;
+  background-color: #DCDCDC;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro h2 {
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 3% 0;
+}
+.intro p {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.intro button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 1%;
+  background-color: #808080;
+  color: white;
+  border-radius: 15px;
+}
+/* closing intro */
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+  margin: 0 5%;
+  /* closing contact */
+  /* closing skills*/
+}
+.middle-content .contact {
+  width: 49%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.middle-content .contact h2 {
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 4%;
+  width: 49%;
+}
+.middle-content .contact p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 200%;
+}
+.middle-content .skills {
+  width: 49%;
+  font-family: 'Poppins', sans-serif;
+}
+.middle-content .skills h2 {
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 4%;
+  width: 49%;
+}
+.middle-content .skills ul {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.9rem;
+  border: 1px solid lightgray;
+}
+.middle-content .skills li {
+  border: 1px solid lightgray;
+  line-height: 200%;
+  padding: 1% 5%;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    padding-top: 5%;
+    color: indigo;
+  }
+}
+/* closing middle-content */
+.history {
+  padding: 3% 0;
+  margin: 0 5%;
+}
+.history h2 {
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .history {
+    font-size: 1rem;
+    color: navy;
+  }
+}
+table {
+  width: 100%;
+  padding-top: 5%;
+}
+table th {
+  font-weight: bold;
+}
+td,
+th {
+  text-align: left;
+  padding: 1.7%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+ tr:nth-child(even) {
+  background-color: lightgrey;
+}
+ footer {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  background-color: #808080;
+  padding: 3% 0;
+  margin: 0 5%;
+  color: white;
+}
+@media (max-width: 500px) {
+   footer {
+    font-size: 1.2rem;
+    color: black;
+  }
+}

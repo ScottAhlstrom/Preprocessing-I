@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	// border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,10 +51,199 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins&display=swap');
+
+/* variables*/
+@text-font: 'Poppins', sans-serif;
+@heading-color: #4682B4;
+@bg-color: #DCDCDC;
+@heading-font: 'Josefin Sans', sans-serif;
+
+/* mixins */
+.mar(){
+	margin: 0 5%;
+}
+.pad(){
+	padding: 3% 0;
+}
+	
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5%;
+	
+	@media (max-width: 500px){
+		flex-direction:column;
+	}
+	a {
+	padding: 2%;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-family: @heading-font;
+	color: black;
+	@media (max-width: 500px){
+		flex-direction:column;
+		color: #0000CD;
+	}
+	}
+}/* closing nav */
+
+img {
+	max-width: 40%;
+}
+
+.intro {
+	padding: 5%;
+	.mar();
+	background-color: @bg-color;
+
+	@media (max-width: 500px){
+		flex-direction:column;
+	}
+
+	h2 {
+		font-size: 8rem;
+		font-family: @heading-font;
+		.pad();
+	}
+
+	p {
+		font-size: 2rem;
+		font-family: @text-font;
+		padding-top: 5%;
+		padding-bottom: 3%;
+	}
+
+	button {
+		font-family: @heading-font;
+		font-size: 1.5rem;
+		padding: 1%;
+		background-color: #808080;
+		color: white;
+		border-radius: 15px;
+	}
+
+} /* closing intro */
+
+.middle-content {
+	display: flex;
+	justify-content: space-between;
+	.pad();
+	.mar();
+
+	.contact {
+		width: 49%;
+		font-family: @text-font;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		
+
+		h2 {
+			font-size: 2.5rem;
+			font-family: @heading-font;
+			padding-bottom: 4%;
+			width: 49%;
+		}
+		p {
+			font-family: @text-font;
+			font-size: 2rem;
+			text-align: justify;
+			line-height: 200%;
+		}
+
+	}/* closing contact */
+	.skills {
+		width: 49%;
+		font-family: @text-font;
+
+		h2 {
+			font-size: 2.5rem;
+			font-family: @heading-font;
+			padding-bottom: 4%;
+			width: 49%;
+		}
+		ul {
+			font-family: @text-font;
+			font-size: 1.9rem;
+			border: 1px solid lightgray;
+			
+		}
+		li {
+			border: 1px solid lightgray;
+			line-height: 200%;
+			padding: 1% 5%;
+			
+		}
+		
+	}/* closing skills*/
+	@media (max-width: 500px){
+		flex-direction:column;
+		padding-top: 5%;
+		color: indigo;
+	}
+} /* closing middle-content */
+
+.history {
+	.pad();
+	.mar();
+	
+	h2 {
+		font-size: 2.5rem;
+		font-family: @heading-font;
+		padding-bottom: 1%;
+	}
+	@media (max-width: 500px){
+		font-size: 1rem;
+		color: navy;
+	}
+}
+table {
+	width: 100%;
+	padding-top: 5%;
+	th {
+		font-weight: bold;
+	}
+}
+
+td, th {
+	text-align: left;
+	padding: 1.7%;
+	font-family: @text-font;
+	font-size: 1.6rem;
+} 
+
+	
+tr:nth-child(even) {
+	background-color: lightgrey;
+	} 
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	font-family: @heading-font;
+	font-size: 1.8rem;
+	background-color: #808080;
+	.pad();
+	.mar();
+	color: white;
+	
+	@media (max-width: 500px) {
+		font-size: 1.2rem;
+		color: black;
+	}
+
+}
